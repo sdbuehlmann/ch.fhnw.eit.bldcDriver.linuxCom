@@ -1,0 +1,3 @@
+Include the following paths for a build:
+/opt/java/jdk1.8.0_102/include
+/opt/java/jdk1.8.0_102/include/linux
