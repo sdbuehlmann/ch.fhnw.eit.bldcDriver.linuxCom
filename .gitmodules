@@ -1,0 +1,3 @@
+[submodule "serializer"]
+	path = serializer
+	url = https://github.com/sdbuehlmann/ch.fhnw.eit.bldcDriver.serializer
