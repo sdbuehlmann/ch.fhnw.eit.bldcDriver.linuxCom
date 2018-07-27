@@ -9,12 +9,10 @@
 #include <stdint.h>
 #include <stdlib.h>
 #include <stdio.h>
-#include <uartCom.h>
 
+#include "uartCom.h"
 #include "loggerbldcmotordriver_serialcom_BLDCDriverCommunication.h"
-#include "bldcDriverSerializer_logger.h"
-#include "bldcDriverSerializer_observer.h"
-#include "bldcDriverSerializer_operator.h"
+#include "jniMethods.h"
 
 // =============== Defines ===============================================
 
@@ -30,7 +28,7 @@ jobject this_obj;
 
 // =============== Functions =============================================
 
-// --------------- JNI ---------------------------------------------------
+// --------------- loggerbldcmotordriver_serialcom_BLDCDriverCommunication.h-------- ---------------------------------------------------
 JNIEXPORT jint JNICALL Java_loggerbldcmotordriver_serialcom_BLDCDriverCommunication_startSerial(JNIEnv *pEnv_param, jobject this_obj_param,
 		jstring port_j, jint symbolrate_j, jboolean parity_j, jboolean twoStopBits_j, jint nrDatabits_j) {
 	pEnv = pEnv_param;
@@ -56,7 +54,6 @@ JNIEXPORT jint JNICALL Java_loggerbldcmotordriver_serialcom_BLDCDriverCommunicat
 	printString("UART ProtoManager started...\n");
 
 	// init serializer
-
 
 	// init serial com
 	printString("Init serial communication...\n");
